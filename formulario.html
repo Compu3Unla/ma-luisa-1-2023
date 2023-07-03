@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donación de insumos/Formulario</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css"> 
+	<link href="formulario.html">
+	<link href="galeria.html">
+	<link href="index.html">
+	<link href="quiero-ayudar.html">
+	<link href="en-construccion.html">
+	<link href="inicio.html">
+</head>
+
+<body>
+	<header>
+		<div id="flex-svg-idiomas">
+			<a href="index.html"><img src="recursos/logo.svg" width="200" height="76" alt="Hogar María Luisa"/></a>
+			<div>
+				<nav>
+					<p>English</p>
+					<p>Deustch</p>
+					<p>Español</p>
+				</nav>
+					<a href="en-construccion.html" class="boton">DONAR</a>
+				</div>
+			</div>
+			<nav id="flex-botonera">
+				<!--  menu hamburguesa responsive-->
+				<input type="checkbox" id="check-menu">
+				<label for="check-menu" class="checkbtn-menu">
+					<img src="recursos/iconos-responsive/menu.svg" width="32" height="30" alt="menú hamburguesa"/> 
+				</label>
+				<!--  menu -->
+				<nav>
+					<a href="inicio.html">INICIO</a>
+					<a href="en-construccion.html">QUIÉNES SOMOS</a>
+					<a href="en-construccion.html">CAMPAÑA #INFANCIASINVIOLENCIAS</a>
+					<a href="galeria.html">NOVEDADES</a>
+					<a href="en-construccion.html">CONTACTO</a>
+				</nav>
+			</nav>
+	</header>
+	
+	<main>
+		<section id="backgroundimg">
+			<div id="flex-quieroayudar">
+				<h3>Quiero ayudar</h3>
+			</div>
+		</section>
+		<div id="flex-divs">
+			<div id="flex-botonera-formulario">
+				<!-- botonera hamburguesa responsive-->
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<img src="recursos/iconos-responsive/flecha.svg" width="32" height="30" alt="botonera"/> 
+				</label>
+					<div id="responsive">
+						<nav id="botonera-formulario">
+							<a href="en-construccion.html">DESDE EXTERIOR</a>
+							<a href="en-construccion.html">ÚNICA VEZ</a>
+							<a href="en-construccion.html">BITCOIN</a>
+							<a href="en-construccion.html">LEGADO</a>
+							<a href="en-construccion.html">EMPRESAS</a>
+							<a href="en-construccion.html">DONA TU CUMPLE</a>
+							<a href="formulario.html">DONACIÓN DE INSUMOS</a>
+						</nav>
+						<nav id="flex-mensual">
+						<div>
+							<p>Donante mensual</p>
+							<a href="en-construccion.html">VER MÁS</a>
+						</div>
+						<img src="recursos/calendario.jpg" width="82" height="89" alt="calendario"/> 
+						</nav>
+					</div>
+			</div>
+			<div id= "sections">
+				<section>
+					<h3 id="donacion-insumos">Donación de insumos</h3>
+					<p>Ayúdanos a suplir necesidades claves para el funcionamiento diario del Hogar.</p>
+					<p>Danos una mano con donaciones materiales para la vida cotidiana en el Hogar. En nuestras redes sociales vamos comunicando nuestras necesidades más urgentes.</p>
+					<div id="flex-insumos">
+						<div class="img-texto">
+							<img src="recursos/iconos-insumos/insumos.jpg" width="34" height="216" alt="insumos"/>
+							<ul>
+								<li>ALIMENTOS</li>
+								<li>ARTÍCULOS DE HIGIENE</li>
+								<li>ARTÍCULOS DE LIMPIEZA</li>
+								<li>ÚTILES</li>
+							</ul>
+						</div>
+						<div class="img-texto">
+							<div id="flex-img">
+								<img src="recursos/iconos-insumos/materiales.jpg" width="34" height="38" alt=""/>
+								<img src="recursos/iconos-insumos/ropa.jpg" width="34" height="31" alt=""/>
+								<img src="recursos/iconos-insumos/otras.jpg" width="34" height="31" alt=""/>
+							</div>
+							<ul>
+								<li>MATERIALES PARA MEJORAS EDILICIAS Y DE INFRAESTRUCTURA: PINTURA, LUMINARIA, MUEBLES</li>
+								<li>ROPA,  ROPA INTERIOR Y DE CAMA</li>
+								<li>ENTRE OTRAS...</li>
+							</ul>
+						</div>
+					</div>
+				</section>	
+				<section id="flex-form">
+					<p>DEJANOS TUS DATOS PARA COORDINAR TU DONACIÓN</p>
+					<form method="post" action="mailto:delfinapiccardo@icloud.com?subject='Email enviado desde el formulario Hogar Maria Luisa'" target="_blank" enctype="text/plain">
+						<div>
+							<input type="text" name="Nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
+							<input type="text" name="Apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
+						</div>
+						<div>
+							<input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
+							<input type="tel" name="Telefono" id="telefono" placeholder="Teléfono">
+						</div>
+					</form>
+					<input type="submit" class="boton" value="DONAR">
+				</section>	
+				<section>
+					<h3 id="transferencias">Transferencias bancarias</h3>
+					<p id="donacion">Podes hacer una donación por transferencia a cualquiera de nuestras cuentas bancarias.</p>
+					<ul>
+						<li> <p>ICBC Industrial and Commercial Bank of China </p></li>
+						<li> <p>Hogar de niños María Luisa</p></li>
+						<li> <p>Cuenta nº: 0902/02000412/45</p></li>
+						<li> <p>C.B.U.: 0150 9025 0200 0000 4124 58 (alias: mlk1877)</p></li>
+						<li> <p>CUIT: 30-52711822-7</p></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</main>
+		<footer>
+			<div id="footer-top">
+				<div id="izquierda-top"> 
+					<div><img src="recursos/img/logo-gris.png" width="203px" height="78px" alt=""/>
+					</div>
+					<div id="item">
+						<a>QUIENES SOMOS</a>
+						<a>CONTACTO</a>
+						<a>QUIERO AYUDAR</a>
+						<a>POLITICA DE PRIVACIDAD</a>
+					</div>
+					<div id="info">
+						<dl>info@hogarmarialuisa.org</dl>
+						<dl>(+54 11) 4768 3938</dl>
+					</div>
+				</div>
+				<div id="derecha-top">
+					<div id="rectangulo"></div>
+					<div id="rectangulo-2"></div>
+					<h4>Suscribirme</h4>
+					<div>
+						<h3 id="h3-footer">¿Querés recibir nuestro newsletter?</h3>
+					</div>
+					<div id="icons">
+						<a href="https://www.facebook.com/HogarMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg facebook.svg" alt="facebook"/>
+						</a>
+						<a href="https://twitter.com/HogarMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg twitter.svg" alt="twitter"/>
+						</a>
+						<a href="https://www.youtube.com/user/HogarNinosMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg youtube.svg" alt="youtube"/>
+						</a>
+						<a href="https://www.instagram.com/hogarmarialuisa/" target="_blank">
+							<img src="recursos/icons/svg instagram.svg" alt="instagram"/>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="footer-bottom">
+				<p id="p-footer">Hogar Maria Luisa c 2020 | Partido de San Martin - Buenos Aires, Argentina</p>
+				<div id="image-footer">
+					<img src="recursos/img/img.jpg" width="151px" height="76px" alt="tuv"/>
+					<img src="recursos/img/img(2).jpg" width="36px" height="48px" alt="data-fiscal"/>
+					<img src="recursos/img/img (1).jpg" width="95px" height="72px" alt="bases de datos"/>
+				</div>	
+			</div>
+		</footer>
+</body>
+</html>

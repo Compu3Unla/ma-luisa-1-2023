@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Noticias/Galería de imágenes</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link href="formulario.html">
+	<link href="galeria.html">
+	<link href="index.html">
+	<link href="quiero-ayudar.html">
+	<link href="en-construccion.html">
+	<link href="inicio.html">
+	<script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div id="flex-svg-idiomas">
+			<a href="index.html"><img src="recursos/logo.svg" width="200" height="76" alt="Hogar María Luisa"/></a>
+			<div>
+				<nav>
+					<p>English</p>
+					<p>Deustch</p>
+					<p>Español</p>
+				</nav>
+					<a href="en-construccion.html" class="boton">DONAR</a>
+			</div>
+			</div>
+			<nav id="flex-botonera">
+				<!--  menu hamburguesa responsive de mobile-->
+				<input type="checkbox" id="check-menu">
+				<label for="check-menu" class="checkbtn-menu">
+					<img src="recursos/menu.svg" width="32" height="30" alt="menú hamburguesa"/> 
+				</label>
+				<!--  menu -->
+				<nav>
+					<a href="inicio.html">INICIO</a>
+					<a href="en-construccion.html">QUIÉNES SOMOS</a>
+					<a href="en-construccion.html">CAMPAÑA #INFANCIASINVIOLENCIAS</a>
+					<a href="galeria.html">NOVEDADES</a>
+					<a href="en-construccion.html">CONTACTO</a>
+				</nav>
+			</nav>
+	</header>
+	<main>
+		<section id="flex-h2">
+			<div>
+				<h2>Novedades</h2>
+			</div>
+		</section>
+		<section id="miniaturas">
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-1"><img src="recursos/galeria/1.png" width="642" height="362" alt="Por Lucio" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">Por Lucio: Escuchemos a las infancias</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-2"><img src="recursos/galeria/2.png" width="642" height="362" alt="Nuestro lugar" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">Nuestro hogar expande su corazón</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-3"><img src="recursos/galeria/3.png" width="642" height="362" alt="#Mesdelaniñez" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">#Mesdelaniñez, queremos jugar</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-4"><img src="recursos/galeria/4.png" width="642" height="362" alt="Infancia libre de maltrato" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">La infancia libre de maltrato es responsabilidad de todos</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-5"><img src="recursos/galeria/5.png" width="642" height="362" alt="Mi hogar mi escuela" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">Mi hogar, mi escuela", renovado proyecto educativo"</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-6"><img src="recursos/galeria/6.png" width="642" height="362" alt="Caminos que dejan huellas" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">Caminos que dejan huellas</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+			<div class="contenedor-img">
+				<figure>
+					<a href="#foto-7"><img src="recursos/galeria/7.png" width="642" height="362" alt="Un hogar de historias" onClick="mostrarGaleria()"/></a>
+					<div class="capa">
+						<h3 class="h3s">Un Hogar de historias, evento de fin de año</h3>
+						<p>LEER MÁS</p>
+					</div>
+				</figure>
+			</div>
+		</section>
+		<section id="galeria">
+			<ul id="galeria-oculta">
+				<li class="fraccion-galeria" id="foto-1">
+					<a href="#" class="primer-ultima-flecha"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-2"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-2">
+					<a href="#foto-1"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-3"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-3">
+					<a href="#foto-2"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-4"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-4">
+					<a href="#foto-3"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-5"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-5">
+					<a href="#foto-4"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-6"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-6">
+					<a href="#foto-5"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#foto-7"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+				<li class="fraccion-galeria" id="foto-7">
+					<a href="#foto-6"><img src="recursos/galeria/back.svg" width="50px" height="50px" alt="Anterior"></a>
+					<img class="close" src="recursos/galeria/close.svg" alt="Cerrar" width="16px" height="16px" onClick="ocultarGaleria()">
+					<a href="#" class="primer-ultima-flecha"><img src="recursos/galeria/next.svg" width="50px" height="50px" alt="Siguiente"></a>
+				</li>
+			</ul>
+		</section>
+	</main>
+		<footer>
+			<div id="footer-top">
+				<div id="izquierda-top"> 
+					<div><img src="recursos/img/logo-gris.png" width="203px" height="78px" alt=""/>
+					</div>
+					<div id="item">
+						<a>QUIENES SOMOS</a>
+						<a>CONTACTO</a>
+						<a>QUIERO AYUDAR</a>
+						<a>POLITICA DE PRIVACIDAD</a>
+					</div>
+					<div id="info">
+						<dl>info@hogarmarialuisa.org</dl>
+						<dl>(+54 11) 4768 3938</dl>
+					</div>
+				</div>
+				<div id="derecha-top">
+					<div id="rectangulo"></div>
+					<div id="rectangulo-2"></div>
+					<h4>Suscribirme</h4>
+					<div>
+						<h3 id="h3-footer">¿Querés recibir nuestro newsletter?</h3>
+					</div>
+					<div id="icons">
+						<a href="https://www.facebook.com/HogarMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg facebook.svg" alt="facebook"/>
+						</a>
+						<a href="https://twitter.com/HogarMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg twitter.svg" alt="twitter"/>
+						</a>
+						<a href="https://www.youtube.com/user/HogarNinosMariaLuisa" target="_blank">
+							<img src="recursos/icons/svg youtube.svg" alt="youtube"/>
+						</a>
+						<a href="https://www.instagram.com/hogarmarialuisa/" target="_blank">
+							<img src="recursos/icons/svg instagram.svg" alt="instagram"/>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="footer-bottom">
+				<p id="p-footer">Hogar Maria Luisa c 2020 | Partido de San Martin - Buenos Aires, Argentina</p>
+				<div id="image-footer">
+					<img src="recursos/img/img.jpg" width="151px" height="76px" alt="tuv"/>
+					<img src="recursos/img/img(2).jpg" width="36px" height="48px" alt="data-fiscal"/>
+					<img src="recursos/img/img (1).jpg" width="95px" height="72px" alt="bases de datos"/>
+				</div>	
+			</div>
+		</footer>
+</body>
+</html>
